@@ -1,4 +1,4 @@
-var header = document.createElement('h1')
+var header = document.createElement('nav')
 header.textContent = 'Home Content Contact'
 header.setAttribute('id', 'navagation')
 document.body.appendChild(header)
@@ -36,7 +36,7 @@ var newListItemThree = document.createElement('li')
 newListItemThree.textContent = 'item three'
 document.getElementById('startingList').appendChild(newListItemThree)
 
-var footer = document.createElement('h1')
+var footer = document.createElement('footer')
 footer.textContent = 'Thank You For Visiting My Site'
 footer.setAttribute('id', 'ending')
 document.body.appendChild(footer)

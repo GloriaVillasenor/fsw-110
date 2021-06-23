@@ -7,12 +7,13 @@ var h2Elements = document.getElementsByTagName("h2");
 
 for (let i = 0; i < 5; i ++) {
     h2Element = document.createElement('h2')
+    h2Element.setAttribute('class', 'border')
     h2Element.innerHTML = "Hello, world!";
     document.body.appendChild(h2Element);
-    h2Elements[i].style.fontsize = "20px";
-    h2Elements[i].style.fontweight = "lighter";
-    h2Elements[i].style.fontfamily = "sans-serif"
-    h2Elements[i].style.color = "cornflowerblue";
+    h2Element.style.fontsize = "20px";
+    h2Element.style.fontweight = "lighter";
+    h2Element.style.fontfamily = "sans-serif"
+    h2Element.style.color = "cornflowerblue";
   }
 
   var border = getElementById('border')

@@ -11,12 +11,17 @@ for (let i = 0; i < 10; i ++) {
     h1Elements[i].style.color = "purple";
   }
 
-var names = ['Steve','Larry','Joe','Shirley','Steph','Nate','Rick','Emily'];
 
-var nameList = document.getElementById("names")
 
-for (var i = 0; i < names.length; i++) {
-    nameList.innerHTML += '<li>' + names[i] + '</li>'
+var nameList = document.createElement('ul')
+nameList.setAttribute('id', 'friends')
+document.body.append(nameList)
+
+const names = ['Steve','Larry','Joe','Shirley','Steph','Nate','Rick','Emily'];
+
+for (var j = 0; j < names.length; j++) {
+  var myList = document.getElementById('friends')
+  myList.innerHTML += '<li>' + names[j] + '</li>'
 }
 
 
