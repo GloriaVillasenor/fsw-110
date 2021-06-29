@@ -1,17 +1,7 @@
-button {
-    color: white;
-    width: 200px;
-    height: 200px;
-    margin-top: 200px;
+#box {
+    height: 100px;
+    width: 100px;
+    border: 3px black solid;
+    margin-top: 300px;
     margin-left: 500px;
-
 }
-
-button:hover {
-    background-color: green;
-}
-
-.buttonload {
-    background-color: black;
-}
-
