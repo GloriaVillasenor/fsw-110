@@ -1,10 +1,10 @@
 const button = document.getElementById('box')
 button.addEventListener('mouseover', buttonChange)
 
-button.addEventListener('unload', completeLoading)
+window.addEventListener('load', completeLoading)
 
 function completeLoading() {
-    button,style.backgroundColor = "black"
+    button.style.backgroundColor = "black"
 }
 
 function buttonChange() {
@@ -17,10 +17,10 @@ function holdButton() {
     button.style.backgroundColor = "yellow"
 }
 
-button.addEventListener('mousedown', goOver)
+button.addEventListener('mouseup', goOver)
 
 function goOver() {
-    buttton.style.backgroundColor = "blue"
+    button.style.backgroundColor = "blue"
 }
 
 button.addEventListener("dblclick", changeTwo)
@@ -29,7 +29,7 @@ function changeTwo() {
     button.style.backgroundColor = "red"
 }
 
-button.addEventListener('scroll', movePage)
+window.addEventListener('wheel', movePage)
 
 function movePage() {
     button.style.backgroundColor = "purple"
