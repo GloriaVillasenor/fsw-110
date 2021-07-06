@@ -7,13 +7,30 @@
     <title>Document</title>
 </head>
 <body>
-    <form name="Customer Data">
+    <form name="customerData">
         First name: <input type = "text" name = "first_name" />
         <br>
-        Last name: <input type = "text" name = "last_name" />
+        Last name: <input type = "text" id = "last_name" />
         <br>
-        Age: <input type = "text" name = "age" />
-        
+        Age: <input type = "text" id = "age" />
+        <br>
+        Do you currently have a members only card? Yes: <input type ="radio" name = "decision" value = 'yes'/> No: <input type = "radio" name = "decision" value = 'no' />
+        <br>
+        How Happy are you with our store?
+        <select name="satisfied">
+            <option value="Happy">Happy</option>
+            <option value="neutral">Neutral</option>
+            <option value="Unhappy">Unhappy</option>
+        </select>
+        <br>
+        How likely are you to renew your subscription?
+        Very likely <input type = "checkbox" value = "verylikely" name = "renewl"/>
+        Likely <input type = "checkbox" value = "likely" name = "renewl"/> 
+        Neutral <input type = "checkbox" value = "neutraly" name = "renewl"/>
+        Not likely <input type = "checkbox" value = "notlikely" name = "renewl"/>
+        <br>
+        <button onClick="alertMess()" type="submit">Submit</button>
     </form>
+    <script src='project2.js'></script>
 </body>
 </html>
