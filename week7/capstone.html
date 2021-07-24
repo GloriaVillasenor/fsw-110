@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>People To Invite</title>
+    <link rel="stylesheet" href="capstone.css">
+</head>
+<body>
+    <header id="header">
+       <h1> People To Invite</h1>
+    </header>
+    <main class="main">
+        <form id="inviteForm">
+            <input class="info" type="text" name="name" placeholder="Invite Someone">
+            <button type="submit" name="submit" value="submit">Submit</button>
+        </form>
+         <div class="showHide">
+            <label>Hide those who haven't responded</label>
+            <input type="checkbox" id="checkbox1">
+        </div> 
+        <ul id="invitedList">
+            <li>
+                <span>Franklin Bob</span>
+                <label>Confirmed<input type="checkbox" id="checkbox2"></label>
+                <button>edit</button>
+                <button>delete</button>
+            </li>
+            <li>
+                <span>Sue Smith</span>
+                <label>Confirmed<input type="checkbox" id="checkbox3"></label>
+                <button>edit</button>
+                <button>delete</button>
+            </li>
+        </ul>
+    </main>
+    <script src='capstone.js'></script>
+</body>
+</html>
